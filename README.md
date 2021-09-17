@@ -8,23 +8,24 @@
 
 _Baseline is a family of Gradle plugins for configuring Java projects with sensible defaults for code-style, static analysis, dependency versioning, CircleCI and IntelliJ IDEA/Eclipse integration._
 
-| Plugin                                        | Description            |
-|-----------------------------------------------|------------------------|
-| `com.palantir.baseline-idea`                  | Configures [Intellij IDEA](https://www.jetbrains.com/idea/) with code style and copyright headers
-| `com.palantir.baseline-eclipse`               | Configures [Eclipse](https://www.eclipse.org/downloads/) with code style and copyright headers
-| `com.palantir.baseline-error-prone`           | Static analysis for your Java code using Google's [error-prone](http://errorprone.info/).
-| `com.palantir.baseline-checkstyle`            | Enforces consistent Java formatting using [checkstyle](http://checkstyle.sourceforge.io/)
-| `com.palantir.baseline-format`                | Formats your java files to comply with checkstyle
-| `com.palantir.baseline-scalastyle`            | Enforces formatting using [scalastyle](https://github.com/scalastyle/scalastyle)
-| `com.palantir.baseline-class-uniqueness`      | Analyses your classpath to ensure no fully-qualified class is defined more than once.
-| `com.palantir.baseline-circleci`              | [CircleCI](https://circleci.com/) integration using `$CIRCLE_ARTIFACTS` and `$CIRCLE_TEST_REPORTS` dirs
-| `com.palantir.baseline-config`                | Config files for the above plugins
-| `com.palantir.baseline-reproducibility`       | Sensible defaults to ensure Jar, Tar and Zip tasks can be reproduced
-| `com.palantir.baseline-exact-dependencies`    | Ensures projects explicitly declare all the dependencies they rely on, no more and no less
-| `com.palantir.baseline-encoding`              | Ensures projects use the UTF-8 encoding in compile tasks.
-| `com.palantir.baseline-release-compatibility` | Ensures projects targeting older JREs only compile against classes and methods available in those JREs.
-| `com.palantir.baseline-testing`               | Configures test tasks to dump heap dumps (hprof files) for convenient debugging
-| `com.palantir.baseline-immutables`            | Enables incremental compilation for the [Immutables](http://immutables.github.io/) annotation processor.
+| Plugin                                         | Description            |
+|------------------------------------------------|------------------------|
+| `com.palantir.baseline-idea`                   | Configures [Intellij IDEA](https://www.jetbrains.com/idea/) with code style and copyright headers
+| `com.palantir.baseline-eclipse`                | Configures [Eclipse](https://www.eclipse.org/downloads/) with code style and copyright headers
+| `com.palantir.baseline-error-prone`            | Static analysis for your Java code using Google's [error-prone](http://errorprone.info/).
+| `com.palantir.baseline-checkstyle`             | Enforces consistent Java formatting using [checkstyle](http://checkstyle.sourceforge.io/)
+| `com.palantir.baseline-format`                 | Formats your java files to comply with checkstyle
+| `com.palantir.baseline-scalastyle`             | Enforces formatting using [scalastyle](https://github.com/scalastyle/scalastyle)
+| `com.palantir.baseline-class-uniqueness`       | Analyses your classpath to ensure no fully-qualified class is defined more than once.
+| `com.palantir.baseline-circleci`               | [CircleCI](https://circleci.com/) integration using `$CIRCLE_ARTIFACTS` and `$CIRCLE_TEST_REPORTS` dirs
+| `com.palantir.baseline-config`                 | Config files for the above plugins
+| `com.palantir.baseline-reproducibility`        | Sensible defaults to ensure Jar, Tar and Zip tasks can be reproduced
+| `com.palantir.baseline-exact-dependencies`     | Ensures projects explicitly declare all the dependencies they rely on, no more and no less
+| `com.palantir.baseline-encoding`               | Ensures projects use the UTF-8 encoding in compile tasks.
+| `com.palantir.baseline-release-compatibility`  | Ensures projects targeting older JREs only compile against classes and methods available in those JREs.
+| `com.palantir.baseline-testing`                | Configures test tasks to dump heap dumps (hprof files) for convenient debugging
+| `com.palantir.baseline-immutables`             | Enables incremental compilation for the [Immutables](http://immutables.github.io/) annotation processor.
+| `com.palantir.baseline-prefer-project-modules` | Configures the default resolution strategy to [prefer project modules](https://docs.gradle.org/current/javadoc/org/gradle/api/artifacts/ResolutionStrategy.html#preferProjectModules--).
 
 See also the [Baseline Java Style Guide and Best Practices](./docs).
 
